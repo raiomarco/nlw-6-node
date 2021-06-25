@@ -24,6 +24,7 @@ class AuthenticateUserService {
             throw new Error("Email/Password incorrect!");
         }
 
+        // TODO: Utilizar .env para armazenar assinatura
         const token = sign(
             {
                 email: user.email
